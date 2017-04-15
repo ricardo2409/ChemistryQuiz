@@ -1,0 +1,12 @@
+PODS:
+  - DIOCollectionView (0.1.0)
+
+DEPENDENCIES:
+  - DIOCollectionView
+
+SPEC CHECKSUMS:
+  DIOCollectionView: b0be0b3abfbe2c39f6230d52315f0da9c495382f
+
+PODFILE CHECKSUM: a6cbb439f33820c00b8a1de02fede27ac4467b47
+
+COCOAPODS: 1.1.0.rc.3
