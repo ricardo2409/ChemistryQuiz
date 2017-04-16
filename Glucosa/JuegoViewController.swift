@@ -70,6 +70,7 @@ class JuegoViewController: UIViewController, UICollectionViewDelegate, DIOCollec
         case .ended:
             self.items1.remove(at: indexPath.row)
             self.collectionView1.deleteItems(at: [indexPath])
+            //Checar si los 3 están correctos
             
         default:
             break

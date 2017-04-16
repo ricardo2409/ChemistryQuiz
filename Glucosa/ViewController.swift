@@ -20,9 +20,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func JuegoAction(_ sender: Any) {
-        performSegue(withIdentifier: "SegueJuego", sender: self)
-    }
+   
 
 }
 
