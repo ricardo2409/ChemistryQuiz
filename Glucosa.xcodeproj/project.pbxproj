@@ -13,6 +13,7 @@
 		8CC662241EA27112006D3BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC662231EA27112006D3BC7 /* Assets.xcassets */; };
 		8CC662271EA27112006D3BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC662251EA27112006D3BC7 /* LaunchScreen.storyboard */; };
 		8CC6622F1EA3D705006D3BC7 /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6622E1EA3D705006D3BC7 /* JuegoViewController.swift */; };
+		8CD7B8631EA3F0A8007BBC71 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7B8621EA3F0A8007BBC71 /* DestinationView.swift */; };
 		8DDABDF391237D481D8BC022 /* Pods_Glucosa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978492A01581D3532B8A6991 /* Pods_Glucosa.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		8CC662261EA27112006D3BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC662281EA27112006D3BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CC6622E1EA3D705006D3BC7 /* JuegoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
+		8CD7B8621EA3F0A8007BBC71 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		978492A01581D3532B8A6991 /* Pods_Glucosa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glucosa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72E5994C8D779AB67E38624 /* Pods-Glucosa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glucosa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glucosa/Pods-Glucosa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				8CC6621C1EA27112006D3BC7 /* AppDelegate.swift */,
 				8CC6621E1EA27112006D3BC7 /* ViewController.swift */,
 				8CC662201EA27112006D3BC7 /* Main.storyboard */,
+				8CD7B8621EA3F0A8007BBC71 /* DestinationView.swift */,
 				8CC6622E1EA3D705006D3BC7 /* JuegoViewController.swift */,
 				8CC662231EA27112006D3BC7 /* Assets.xcassets */,
 				8CC662251EA27112006D3BC7 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC6621F1EA27112006D3BC7 /* ViewController.swift in Sources */,
+				8CD7B8631EA3F0A8007BBC71 /* DestinationView.swift in Sources */,
 				8CC6621D1EA27112006D3BC7 /* AppDelegate.swift in Sources */,
 				8CC6622F1EA3D705006D3BC7 /* JuegoViewController.swift in Sources */,
 			);
@@ -342,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79DFCF8C84333EFB7D5D2FEA /* Pods-Glucosa.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BR3P2ZY3G5;
 				INFOPLIST_FILE = Glucosa/Info.plist;
@@ -356,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A72E5994C8D779AB67E38624 /* Pods-Glucosa.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BR3P2ZY3G5;
 				INFOPLIST_FILE = Glucosa/Info.plist;

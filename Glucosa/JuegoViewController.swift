@@ -14,7 +14,7 @@ class JuegoViewController: UIViewController, UICollectionViewDelegate, DIOCollec
     
     @IBOutlet weak var collectionView1: DIOCollectionView!
     
-    var items1 = [("Celulosa", UIImage(named:"celulosa")!)]
+    var items1 = [("Celulosa", UIImage(named:"celulosa")!), ("Celobiosa", UIImage(named:"celobiosa")!), ("Glucosa", UIImage(named:"glucosa")!)]
 
     
     func itemsForCollectionView(collectionView: UICollectionView) -> [(String, UIImage)] {
@@ -29,8 +29,12 @@ class JuegoViewController: UIViewController, UICollectionViewDelegate, DIOCollec
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewDidLoad")
-        self.collectionView1.dioDataSource = self
-        self.collectionView1.dioDelegate = self
+        collectionView1.delegate = self
+        collectionView1.dataSource = self
+        collectionView1.dioDataSource = self
+        collectionView1.dioDelegate = self
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -59,9 +63,9 @@ class JuegoViewController: UIViewController, UICollectionViewDelegate, DIOCollec
 
         switch(dragState) {
             
-        case .began:
-            self.items1.remove(at: indexPath.row)
-            self.collectionView1.deleteItems(at: [indexPath])
+//        case .began:
+//            self.items1.remove(at: indexPath.row)
+//            self.collectionView1.deleteItems(at: [indexPath])
             
         case .ended:
             self.items1.remove(at: indexPath.row)
@@ -84,14 +88,17 @@ class JuegoViewController: UIViewController, UICollectionViewDelegate, DIOCollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         print("cellForItem")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
-        let label = cell.subviews[0].subviews[0] as! UILabel
+
+        let imageView  = cell.subviews[0].subviews[0] as! UIImageView
+        let label = cell.subviews[0].subviews[1] as! UILabel
         
         let item = itemsForCollectionView(collectionView: collectionView)[indexPath.row]
+        print(item)
+        //let label as UILabel()!
+        
         
         label.text = "\(item.0)"
-        //cell.subviews[0]. = item.1
-        
+        imageView.image = item.1
         
         return cell
     }
