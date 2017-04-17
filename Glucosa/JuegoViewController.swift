@@ -19,17 +19,18 @@ class JuegoViewController: UIViewController {
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var imageView3: UIImageView!
     
-    var imagenCelulosa:UIImage? = nil
-    var imagenCelobiosa:UIImage? = nil
-    var imagenGlucosa:UIImage? = nil
     
     var items1 = [(10, UIImage(named:"celulosa")!),
                   (20, UIImage(named:"celobiosa")!),
                   (30, UIImage(named:"glucosa")!)]
+    
+    var itemsAux = [(Int, UIImage)]()
 
+    
     
     func itemsForCollectionView(collectionView: UICollectionView) -> [(Int, UIImage)] {
         if(collectionView == collectionView1) {
+            //items1 = itemsAux
             return items1
         }
         return []
@@ -42,9 +43,8 @@ class JuegoViewController: UIViewController {
         collectionView1.dioDataSource = self
         collectionView1.dioDelegate = self
         
-        imagenCelulosa = UIImage(named:"celulosa")!
-        imagenCelobiosa = UIImage(named:"celobiosa")!
-        imagenGlucosa = UIImage(named:"glucosa")!
+        itemsAux = items1
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -70,9 +70,9 @@ extension JuegoViewController: DIOCollectionViewDelegate {
                            withDragState dragState: DIODragState) {
         switch(dragState) {
             
-            //        case .began:
-            //            self.items1.remove(at: indexPath.row)
-            //            self.collectionView1.deleteItems(at: [indexPath])
+       // case .began:
+            //self.items1.remove(at: indexPath.row)
+            //self.collectionView1.deleteItems(at: [indexPath])
             
         case .ended:
             items1.remove(at: indexPath.row)
@@ -126,11 +126,16 @@ private extension JuegoViewController {
             SCLAlertView().showSuccess("Correcto", subTitle: ":)")
             print("correcto")
             
+            //Instantiate next VC
+            
         } else {
             SCLAlertView().showError("Incorrecto", subTitle: ":(")
             print("incorrecto")
             reload()
-            //                    self.collectionView1.reloadData()
+            print(items1)
+            items1 = itemsAux
+            print(itemsAux)
+            self.collectionView1.reloadData()
             
         }
     }
