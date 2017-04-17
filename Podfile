@@ -7,4 +7,6 @@ target 'Glucosa' do
 
   # Pods for Glucosa
 	pod 'DIOCollectionView'
+    pod 'SCLAlertView'
+    
 end

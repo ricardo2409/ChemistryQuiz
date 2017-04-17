@@ -93,13 +93,6 @@
                                                     <rect key="frame" x="-8" y="-11" width="106" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yR-cc-bv4">
-                                                    <rect key="frame" x="4" y="14" width="85" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                         </view>
                                         <size key="customSize" width="89" height="79"/>
@@ -174,6 +167,9 @@
                     <navigationItem key="navigationItem" title="Juego" id="Y5S-cc-7Fm"/>
                     <connections>
                         <outlet property="collectionView1" destination="8Dx-qA-egl" id="rBn-Vj-eV1"/>
+                        <outlet property="imageView1" destination="h5B-AL-p0T" id="pXH-Jr-FPI"/>
+                        <outlet property="imageView2" destination="iv1-o2-aEg" id="i61-44-Tce"/>
+                        <outlet property="imageView3" destination="hvR-F6-dbA" id="4ut-6j-56b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4WJ-64-8J1" userLabel="First Responder" sceneMemberID="firstResponder"/>

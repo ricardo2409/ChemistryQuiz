@@ -1,12 +1,15 @@
 PODS:
   - DIOCollectionView (0.1.0)
+  - SCLAlertView (0.7.0)
 
 DEPENDENCIES:
   - DIOCollectionView
+  - SCLAlertView
 
 SPEC CHECKSUMS:
   DIOCollectionView: b0be0b3abfbe2c39f6230d52315f0da9c495382f
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
 
-PODFILE CHECKSUM: a6cbb439f33820c00b8a1de02fede27ac4467b47
+PODFILE CHECKSUM: fd20b188f26ab0371460fb34ef6c7e3823db09f5
 
 COCOAPODS: 1.1.0.rc.3
