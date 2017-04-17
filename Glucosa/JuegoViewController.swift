@@ -123,15 +123,27 @@ extension JuegoViewController: UICollectionViewDelegate {}
 private extension JuegoViewController {
     func checkIfImagesInOrder() {
         if(imageView1.tag == 10 && imageView2.tag == 20 || imageView2.tag == 20 && imageView3.tag == 30 || imageView1.tag == 10 && imageView3.tag == 30){
-            SCLAlertView().showSuccess("Correcto", subTitle: ":)")
-            print("correcto")
             
-            //Instantiate next VC
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
-                if let navigator = navigationController {
-                    navigator.pushViewController(viewController, animated: true)
+            
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton: false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("Siguiente Nivel") {
+                
+                //Instantiate next VC
+                if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
+                    if let navigator = self.navigationController {
+                        navigator.pushViewController(viewController, animated: true)
+                    }
                 }
             }
+            
+            alertView.showSuccess("Correcto", subTitle: ":)")
+            print("correcto")
+            
+           
             
         } else {
             SCLAlertView().showError("Incorrecto", subTitle: ":(")
