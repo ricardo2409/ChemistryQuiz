@@ -10,6 +10,91 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>04C48EFC6E8B7AE0CED0F3A1967385C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DIOCollectionView-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05DEE7366CEEF92B013953B1FDF2560D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>51388A63B0A387C09D73333D07FC024E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Glucosa/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Glucosa/Pods-Glucosa.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Glucosa</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>0682ED6FFCDC72DFEBE4B8E65C6F18DF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -39,42 +124,70 @@
 		<key>0CFEFD49A47D54E0D54715F9B80137C3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6041CF8B2AA14238BD6675EC942AA183</string>
+			<string>DBB52456275747B07AC3F07D7D5F20FB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0D98A0D21AFD2D9D404B3A238B0A86C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>DIOCollectionViewDataSource.swift</string>
-			<key>path</key>
-			<string>Classes/DIOCollectionViewDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>146BD408B8E038A7BF748214296DEDA1</key>
+		<key>0F07A163B2D4CC4B2D5E712A82909D21</key>
 		<dict>
 			<key>fileRef</key>
 			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1A6127FCABC2498B170553C01221CF0A</key>
+		<key>182BF2EE7AA03FB61082A32597C47AB7</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>DIOCollectionView</string>
-			<key>target</key>
-			<string>20541D142C2E0842BE3383FF085FB940</string>
-			<key>targetProxy</key>
-			<string>C3C01A0BD86838FAEC4B958D47E3315D</string>
+			<string>DIOCollectionView.framework</string>
+			<key>path</key>
+			<string>DIOCollectionView.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>19F2119042CB685A30BA1A461D5D3D63</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SCLAlertView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C91AA3DD35035E81E947F6840A4D679</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7718F9047CC0FED700B51F0B04AA9CF8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1E2D36D62E9BC89435B1CA63E6C61FC6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>DIOCollectionView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>20541D142C2E0842BE3383FF085FB940</key>
 		<dict>
@@ -97,9 +210,86 @@
 			<key>productName</key>
 			<string>DIOCollectionView</string>
 			<key>productReference</key>
-			<string>6A51DF586819D5619A807B304926D591</string>
+			<string>182BF2EE7AA03FB61082A32597C47AB7</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>21C926F16F114199043C45D14AC9C73D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>19F2119042CB685A30BA1A461D5D3D63</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27A3BA67EFCB4923D266E74485EE3B5D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7A8A0F8D9CF387363D864B0FA149DF3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2816A10E63116D8C9F4939F208EDC783</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5643F7202B17F7ACDFED99543A0F790B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>288200549A79CE9C00CA12483A20A9A4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DFD28534D02762B1E7DD0C01146C1C91</string>
+				<string>1E2D36D62E9BC89435B1CA63E6C61FC6</string>
+				<string>B19D8F6117415A54E35D53410B8315BE</string>
+				<string>601DC4AA598F8E0552CD0644E90BAA2D</string>
+				<string>04C48EFC6E8B7AE0CED0F3A1967385C4</string>
+				<string>550DE1D2B33BA3DA0542CFAC380502C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/DIOCollectionView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2B9DCC81368250D109BE50870704CD59</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C7B51C28E593FB89F01304C3118E2150</string>
+			<key>remoteInfo</key>
+			<string>SCLAlertView</string>
+		</dict>
+		<key>2C00DAF0C3BB9566F5BE00129D5C0812</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>DIOCollectionView</string>
+			<key>target</key>
+			<string>20541D142C2E0842BE3383FF085FB940</string>
+			<key>targetProxy</key>
+			<string>33B947E9A1E74ACE5F5A61BE170937AE</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -115,38 +305,25 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2FE31C254F2FE773BA1E9184BB9618F2</key>
+		<key>33B947E9A1E74ACE5F5A61BE170937AE</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>DIOCollectionView.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>20541D142C2E0842BE3383FF085FB940</string>
+			<key>remoteInfo</key>
+			<string>DIOCollectionView</string>
 		</dict>
 		<key>36D22B487F19D89FFE93642EF6A1A127</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D23326171E89F081230B3E9E45432508</string>
+			<string>D50DA58F7C092FDB898B563C35711FB4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A83853B2D39595248527BEF378002BA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>73D4DF41C0C8E6DFF60A2819F07E3B62</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>3CE8EE33B9966D9A9ACDA356705AAE1A</key>
 		<dict>
@@ -161,6 +338,21 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>3DBAD043A2C179023943FD201E253928</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCLAlertView.swift</string>
+			<key>path</key>
+			<string>SCLAlertView/SCLAlertView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
 		<dict>
 			<key>children</key>
@@ -174,23 +366,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>431132B5004E679946F0972E3B040490</key>
+		<key>3E1A41C2450B804ED0FC423EB60D7AC7</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7714FCF7EFC25D82AD4A9C647DEF42B3</string>
-			</array>
+			<key>fileRef</key>
+			<string>B1547B793587F6D3FEE0B374E5026F5E</string>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>48BBAD0E17E06DE6B3108BF8D508738C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EEEC7FF4ADE2B0FD06C8305215AE092F</string>
+			<string>04C48EFC6E8B7AE0CED0F3A1967385C4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -200,6 +386,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>49C461DA1CDD1F3D353E2023A5DC0760</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SCLAlertView.framework</string>
+			<key>path</key>
+			<string>SCLAlertView.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>49EEA32D725903527954BE9C3FE5B708</key>
 		<dict>
@@ -224,6 +425,33 @@
 			<string>Pods-Glucosa.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>550DE1D2B33BA3DA0542CFAC380502C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5643F7202B17F7ACDFED99543A0F790B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAEF88DF93C618DC2C4AE68A826E8D09</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>59B042A655B7C20CBAB90E385BF4E4C7</key>
 		<dict>
@@ -307,6 +535,33 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>5BC43EC08F2AD31C78785C60BE137AE0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B183C975152430051BDDFFCBB8D4999E</string>
+				<string>8A7BDF3C66771C0CF70C0009075DC49B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C21387F95B9F4EC90A062AA50B3FCAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0F07A163B2D4CC4B2D5E712A82909D21</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>5C510C5A8541FA3BA2B63B6F2634EC53</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -320,27 +575,113 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6041CF8B2AA14238BD6675EC942AA183</key>
+		<key>5E60D46E0AC48900493758606216EBEE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A387812586D001AC3DDF3DB04F056540</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SCLAlertView/SCLAlertView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SCLAlertView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SCLAlertView/SCLAlertView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SCLAlertView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5F38E7BF409DAE1A763BDBAE8827EE52</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D05FF286A6B9A6900DD650610EA9CEC</string>
+				<string>B781C38E79CED03FDFEC50643FF87631</string>
+				<string>A387812586D001AC3DDF3DB04F056540</string>
+				<string>19F2119042CB685A30BA1A461D5D3D63</string>
+				<string>71CEEA17131EA3846D2130D04E7CA55D</string>
+				<string>DAEF88DF93C618DC2C4AE68A826E8D09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SCLAlertView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>601DC4AA598F8E0552CD0644E90BAA2D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UIView+Extensions.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Classes/UIView+Extensions.swift</string>
+			<string>DIOCollectionView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>63F90EBCD8E7F04D5C5C4BA7943AFE95</key>
+		<key>698690AC4316E1F993A7691437C7F68D</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>C733E6E3F134D9D5870A44C7402CD4CB</string>
-				<string>FB3FC5A54D29BF36DBC4039BA504268C</string>
+				<string>5E60D46E0AC48900493758606216EBEE</string>
+				<string>9052C614EDC2C6395F18D4C84D7C9596</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -349,47 +690,18 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>66BBCA84348A92E59FF1FFE05CB3D500</key>
+		<key>71CEEA17131EA3846D2130D04E7CA55D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>SCLAlertView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A51DF586819D5619A807B304926D591</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>DIOCollectionView.framework</string>
-			<key>path</key>
-			<string>DIOCollectionView.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>73D4DF41C0C8E6DFF60A2819F07E3B62</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C55FD97544151457D0D4188F0FA02923</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>7583840F0C9BF8615E95C12E92154037</key>
 		<dict>
@@ -404,12 +716,46 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7714FCF7EFC25D82AD4A9C647DEF42B3</key>
+		<key>7718F9047CC0FED700B51F0B04AA9CF8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B1547B793587F6D3FEE0B374E5026F5E</string>
+			<string>C55FD97544151457D0D4188F0FA02923</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7D05FF286A6B9A6900DD650610EA9CEC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D7071A1709FC5DB1F769B4BACCE7203</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B0EF530D3980188B50D8B5DF134AB2C9</string>
+				<string>05DEE7366CEEF92B013953B1FDF2560D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -417,8 +763,8 @@
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>C33C847EE9738E4F88108AA9B8266769</string>
-				<string>AD9D1A254AB1E7CAA83159F2E616EC29</string>
+				<string>5BC43EC08F2AD31C78785C60BE137AE0</string>
+				<string>F266C9BD1FD8757A6D80DCC22552E766</string>
 				<string>DEB0DC50197393C0894B02529563FCFB</string>
 			</array>
 			<key>isa</key>
@@ -429,7 +775,7 @@
 		<key>7E2BF41D257D3F8F6941C5DE9866F5C4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0D98A0D21AFD2D9D404B3A238B0A86C6</string>
+			<string>E5AEB70620F57E08036B4641FCB58B1C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -440,10 +786,27 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>8A7BDF3C66771C0CF70C0009075DC49B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3DBAD043A2C179023943FD201E253928</string>
+				<string>A3D03D3BBB45B733E116CE9C62EDDB9C</string>
+				<string>5F38E7BF409DAE1A763BDBAE8827EE52</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SCLAlertView</string>
+			<key>path</key>
+			<string>SCLAlertView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>8B5A1FAEB49CA8E1D3456FCD559D43FF</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2FE31C254F2FE773BA1E9184BB9618F2</string>
+			<string>1E2D36D62E9BC89435B1CA63E6C61FC6</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
@@ -508,32 +871,71 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>91B16B99EED9A80D62077B2EB592ADB9</key>
+		<key>9052C614EDC2C6395F18D4C84D7C9596</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>63F90EBCD8E7F04D5C5C4BA7943AFE95</string>
-			<key>buildPhases</key>
-			<array>
-				<string>431132B5004E679946F0972E3B040490</string>
-				<string>F3886875202555193AB831101003C2FD</string>
-				<string>3A83853B2D39595248527BEF378002BA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>1A6127FCABC2498B170553C01221CF0A</string>
-			</array>
+			<key>baseConfigurationReference</key>
+			<string>A387812586D001AC3DDF3DB04F056540</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SCLAlertView/SCLAlertView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SCLAlertView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SCLAlertView/SCLAlertView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SCLAlertView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Pods-Glucosa</string>
-			<key>productName</key>
-			<string>Pods-Glucosa</string>
-			<key>productReference</key>
-			<string>BEA41F93A798479523D8DBBF203DCB50</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>Release</string>
 		</dict>
 		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
 		<dict>
@@ -554,68 +956,154 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>94B2894205F251B6D63487822491A184</key>
+		<key>957E219C42EA451E5F47FC4560B82D7B</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>D23326171E89F081230B3E9E45432508</string>
-				<string>0D98A0D21AFD2D9D404B3A238B0A86C6</string>
-				<string>6041CF8B2AA14238BD6675EC942AA183</string>
-				<string>DB9DF46E15DB1EB9AFFBA7BDAEBE2BD6</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>DIOCollectionView</string>
-			<key>path</key>
-			<string>DIOCollectionView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>SCLAlertView</string>
+			<key>target</key>
+			<string>C7B51C28E593FB89F01304C3118E2150</string>
+			<key>targetProxy</key>
+			<string>2B9DCC81368250D109BE50870704CD59</string>
 		</dict>
-		<key>99350D38360B5B1C18E00741FDE0E5A1</key>
+		<key>99C5D36EE34A5910ED84391DCD58CB62</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_Glucosa.framework</string>
 			<key>path</key>
-			<string>DIOCollectionView.modulemap</string>
+			<string>Pods-Glucosa.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>A45F69E42A05727B272AF8469D833A4C</key>
+		<key>9F7871FDA28BF33987A18746D5A9870F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3D03D3BBB45B733E116CE9C62EDDB9C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A387812586D001AC3DDF3DB04F056540</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>DIOCollectionView-dummy.m</string>
+			<string>SCLAlertView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3D03D3BBB45B733E116CE9C62EDDB9C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCLExtensions.swift</string>
+			<key>path</key>
+			<string>SCLAlertView/SCLExtensions.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A926CB465DDA5344FBB1C13BC075ACBA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A45F69E42A05727B272AF8469D833A4C</string>
+			<string>B19D8F6117415A54E35D53410B8315BE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>AD9D1A254AB1E7CAA83159F2E616EC29</key>
+		<key>ABE2624D53A5B41717540F776B77A94C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>6A51DF586819D5619A807B304926D591</string>
-				<string>BEA41F93A798479523D8DBBF203DCB50</string>
-			</array>
+			<key>fileRef</key>
+			<string>3DBAD043A2C179023943FD201E253928</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B0EF530D3980188B50D8B5DF134AB2C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0783477307E9798F64B6BE9D1B431F0C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Glucosa/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Glucosa/Pods-Glucosa.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Glucosa</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Debug</string>
 		</dict>
 		<key>B1547B793587F6D3FEE0B374E5026F5E</key>
 		<dict>
@@ -627,6 +1115,37 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-Glucosa-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B183C975152430051BDDFFCBB8D4999E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D50DA58F7C092FDB898B563C35711FB4</string>
+				<string>E5AEB70620F57E08036B4641FCB58B1C</string>
+				<string>DBB52456275747B07AC3F07D7D5F20FB</string>
+				<string>288200549A79CE9C00CA12483A20A9A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>DIOCollectionView</string>
+			<key>path</key>
+			<string>DIOCollectionView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B19D8F6117415A54E35D53410B8315BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DIOCollectionView-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -705,6 +1224,17 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>B781C38E79CED03FDFEC50643FF87631</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SCLAlertView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
@@ -718,46 +1248,33 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BEA41F93A798479523D8DBBF203DCB50</key>
+		<key>C4ED23A5317C22C0AD01F506484BBC36</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Glucosa.framework</string>
-			<key>path</key>
-			<string>Pods-Glucosa.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C33C847EE9738E4F88108AA9B8266769</key>
-		<dict>
-			<key>children</key>
+			<key>buildConfigurationList</key>
+			<string>7D7071A1709FC5DB1F769B4BACCE7203</string>
+			<key>buildPhases</key>
 			<array>
-				<string>94B2894205F251B6D63487822491A184</string>
+				<string>E836C7EA9634C2360690D960F2651DA9</string>
+				<string>5C21387F95B9F4EC90A062AA50B3FCAD</string>
+				<string>1C91AA3DD35035E81E947F6840A4D679</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2C00DAF0C3BB9566F5BE00129D5C0812</string>
+				<string>957E219C42EA451E5F47FC4560B82D7B</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3C01A0BD86838FAEC4B958D47E3315D</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>20541D142C2E0842BE3383FF085FB940</string>
-			<key>remoteInfo</key>
-			<string>DIOCollectionView</string>
+			<string>Pods-Glucosa</string>
+			<key>productName</key>
+			<string>Pods-Glucosa</string>
+			<key>productReference</key>
+			<string>99C5D36EE34A5910ED84391DCD58CB62</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>C55FD97544151457D0D4188F0FA02923</key>
 		<dict>
@@ -796,79 +1313,30 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C733E6E3F134D9D5870A44C7402CD4CB</key>
+		<key>C7B51C28E593FB89F01304C3118E2150</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0783477307E9798F64B6BE9D1B431F0C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Glucosa/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Glucosa/Pods-Glucosa.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Glucosa</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
+			<key>buildConfigurationList</key>
+			<string>698690AC4316E1F993A7691437C7F68D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D48479968E1D8B014C0AB9773D8550A3</string>
+				<string>27A3BA67EFCB4923D266E74485EE3B5D</string>
+				<string>2816A10E63116D8C9F4939F208EDC783</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>SCLAlertView</string>
+			<key>productName</key>
+			<string>SCLAlertView</string>
+			<key>productReference</key>
+			<string>49C461DA1CDD1F3D353E2023A5DC0760</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>CA9D1DD9FF587BBE077AA4D9621CD35D</key>
 		<dict>
@@ -880,19 +1348,6 @@
 			<string>text.script.sh</string>
 			<key>path</key>
 			<string>Pods-Glucosa-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CE1C1082642048937A50716CE281E757</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DIOCollectionView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -908,21 +1363,6 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D23326171E89F081230B3E9E45432508</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>DIOCollectionView.swift</string>
-			<key>path</key>
-			<string>Classes/DIOCollectionView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -950,7 +1390,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>AD9D1A254AB1E7CAA83159F2E616EC29</string>
+			<string>F266C9BD1FD8757A6D80DCC22552E766</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -960,26 +1400,65 @@
 			<key>targets</key>
 			<array>
 				<string>20541D142C2E0842BE3383FF085FB940</string>
-				<string>91B16B99EED9A80D62077B2EB592ADB9</string>
+				<string>C4ED23A5317C22C0AD01F506484BBC36</string>
+				<string>C7B51C28E593FB89F01304C3118E2150</string>
 			</array>
 		</dict>
-		<key>DB9DF46E15DB1EB9AFFBA7BDAEBE2BD6</key>
+		<key>D48479968E1D8B014C0AB9773D8550A3</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>99350D38360B5B1C18E00741FDE0E5A1</string>
-				<string>2FE31C254F2FE773BA1E9184BB9618F2</string>
-				<string>A45F69E42A05727B272AF8469D833A4C</string>
-				<string>CE1C1082642048937A50716CE281E757</string>
-				<string>EEEC7FF4ADE2B0FD06C8305215AE092F</string>
-				<string>66BBCA84348A92E59FF1FFE05CB3D500</string>
+				<string>21C926F16F114199043C45D14AC9C73D</string>
+				<string>ABE2624D53A5B41717540F776B77A94C</string>
+				<string>9F7871FDA28BF33987A18746D5A9870F</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D50DA58F7C092FDB898B563C35711FB4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>DIOCollectionView.swift</string>
 			<key>path</key>
-			<string>../Target Support Files/DIOCollectionView</string>
+			<string>Classes/DIOCollectionView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAEF88DF93C618DC2C4AE68A826E8D09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SCLAlertView-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DBB52456275747B07AC3F07D7D5F20FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UIView+Extensions.swift</string>
+			<key>path</key>
+			<string>Classes/UIView+Extensions.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1012,6 +1491,17 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>DFD28534D02762B1E7DD0C01146C1C91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DIOCollectionView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E3AB90CAAAD86983324E7BB37AF9B3DE</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1025,18 +1515,33 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>EEEC7FF4ADE2B0FD06C8305215AE092F</key>
+		<key>E5AEB70620F57E08036B4641FCB58B1C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DIOCollectionViewDataSource.swift</string>
 			<key>path</key>
-			<string>DIOCollectionView-umbrella.h</string>
+			<string>Classes/DIOCollectionViewDataSource.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E836C7EA9634C2360690D960F2651DA9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3E1A41C2450B804ED0FC423EB60D7AC7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>EF479B2615369BB181713C72324D2BB8</key>
 		<dict>
@@ -1052,23 +1557,32 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>F3886875202555193AB831101003C2FD</key>
+		<key>F266C9BD1FD8757A6D80DCC22552E766</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>146BD408B8E038A7BF748214296DEDA1</string>
+				<string>182BF2EE7AA03FB61082A32597C47AB7</string>
+				<string>99C5D36EE34A5910ED84391DCD58CB62</string>
+				<string>49C461DA1CDD1F3D353E2023A5DC0760</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7A8A0F8D9CF387363D864B0FA149DF3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>FA1F54F3E9276E9FCB1273D2997BD21D</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2FE31C254F2FE773BA1E9184BB9618F2</string>
+			<string>1E2D36D62E9BC89435B1CA63E6C61FC6</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
@@ -1119,78 +1633,6 @@
 				<string>YES</string>
 				<key>SWIFT_VERSION</key>
 				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FB3FC5A54D29BF36DBC4039BA504268C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>51388A63B0A387C09D73333D07FC024E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Glucosa/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Glucosa/Pods-Glucosa.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Glucosa</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
 				<key>TARGETED_DEVICE_FAMILY</key>
 				<string>1,2</string>
 				<key>VERSIONING_SYSTEM</key>
