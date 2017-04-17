@@ -1,5 +1,5 @@
 //
-//  JuegoViewController.swift
+//  Juego2ViewController.swift
 //  Glucosa
 //
 //  Created by Ricardo on 4/16/17.
@@ -10,73 +10,82 @@ import UIKit
 import DIOCollectionView
 import SCLAlertView
 
+class Juego2ViewController: UIViewController {
 
-class JuegoViewController: UIViewController {
-    
-    @IBOutlet weak var collectionView1: DIOCollectionView!
-    
     @IBOutlet weak var imageView1: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var imageView3: UIImageView!
     
+    @IBOutlet weak var collectionView2: DIOCollectionView!
     
-    var items1 = [(10, UIImage(named:"celulosa")!),
-                  (20, UIImage(named:"celobiosa")!),
-                  (30, UIImage(named:"glucosa")!)]
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     
-    var itemsAux = [(Int, UIImage)]()
-
+    var items1 = [(10, "Glucosa"),
+                  (20, "Celulosa"),
+                  (30, "Celobiosa")]
     
+    var itemsAux = [(Int, String)]()
     
-    func itemsForCollectionView(collectionView: UICollectionView) -> [(Int, UIImage)] {
-        if(collectionView == collectionView1) {
+    func itemsForCollectionView(collectionView: UICollectionView) -> [(Int, String)] {
+        if(collectionView == collectionView2) {
             //items1 = itemsAux
             return items1
         }
         return []
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        addObservers()
-        collectionView1.delegate = self
-        collectionView1.dataSource = self
-        collectionView1.dioDataSource = self
-        collectionView1.dioDelegate = self
-        
+        addObservers2()
+        imageView1.image = UIImage(named: "glucosa")
+        imageView3.image = UIImage(named: "celulosa")
+        imageView2.image = UIImage(named: "celobiosa")
+        // Do any additional setup after loading the view.
+        collectionView2.delegate = self
+        collectionView2.dataSource = self
+        collectionView2.dioDataSource = self
+        collectionView2.dioDelegate = self
         itemsAux = items1
-        
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
     func reload(){
-        imageView1.image = UIImage()
-        imageView2.image = UIImage()
-        imageView3.image = nil
+        label1.text = ""
+        label2.text = ""
+        label3.text = ""
     }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
 
-extension JuegoViewController: DIOCollectionViewDelegate {
+extension Juego2ViewController: DIOCollectionViewDelegate {
     func dioCollectionView(_ dioCollectionView: DIOCollectionView,
                            draggedItemAtIndexPath indexPath: IndexPath,
                            withDragState dragState: DIODragState) {
         switch(dragState) {
             
-       // case .began:
+            // case .began:
             //self.items1.remove(at: indexPath.row)
             //self.collectionView1.deleteItems(at: [indexPath])
             
         case .ended:
             items1.remove(at: indexPath.row)
-            collectionView1.deleteItems(at: [indexPath])
+            collectionView2.deleteItems(at: [indexPath])
             
         default:
             break
@@ -84,7 +93,7 @@ extension JuegoViewController: DIOCollectionViewDelegate {
     }
 }
 
-extension JuegoViewController: DIOCollectionViewDataSource {
+extension Juego2ViewController: DIOCollectionViewDataSource {
     func dioCollectionView(_ dioCollectionView: DIOCollectionView,
                            userDataForItemAtIndexPath indexPath: IndexPath) -> Any? {
         let cellData = itemsForCollectionView(collectionView: dioCollectionView)[indexPath.row]
@@ -92,23 +101,23 @@ extension JuegoViewController: DIOCollectionViewDataSource {
     }
 }
 
-extension JuegoViewController: UICollectionViewDataSource {
+extension Juego2ViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath)
         
-        let imageView  = cell.subviews[0].subviews[0] as! UIImageView
-        //let label = cell.subviews[0].subviews[1] as! UILabel
+        let label  = cell.subviews[0].subviews[0] as! UILabel
+      
         
         let item = itemsForCollectionView(collectionView: collectionView)[indexPath.row]
         print(item)
         
         
         //label.text = "\(item.0)"
-        imageView.image = item.1
+        label.text = item.1
         
         return cell
     }
@@ -118,20 +127,18 @@ extension JuegoViewController: UICollectionViewDataSource {
     }
 }
 
-extension JuegoViewController: UICollectionViewDelegate {}
+extension Juego2ViewController: UICollectionViewDelegate {}
 
-private extension JuegoViewController {
-    func checkIfImagesInOrder() {
-        if(imageView1.tag == 10 && imageView2.tag == 20 || imageView2.tag == 20 && imageView3.tag == 30 || imageView1.tag == 10 && imageView3.tag == 30){
+private extension Juego2ViewController {
+    func checkIfImagesInOrder2() {
+        print(label1.tag)
+        print(label2.tag)
+        print(label3.tag)
+        if(label1.tag == 10 && label2.tag == 20 || label2.tag == 20 && label3.tag == 30 || label1.tag == 10 && label3.tag == 30){
             SCLAlertView().showSuccess("Correcto", subTitle: ":)")
             print("correcto")
             
             //Instantiate next VC
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
-                if let navigator = navigationController {
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
             
         } else {
             SCLAlertView().showError("Incorrecto", subTitle: ":(")
@@ -140,16 +147,17 @@ private extension JuegoViewController {
             print(items1)
             items1 = itemsAux
             print(itemsAux)
-            self.collectionView1.reloadData()
+            self.collectionView2.reloadData()
             
         }
     }
     
-    func addObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.gameHasEnded), name: Notification.Name("gameHasEndedNotification"), object: nil)
+    func addObservers2() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.gameHasEnded), name: Notification.Name("gameHasEndedNotification2"), object: nil)
     }
     
     @objc func gameHasEnded() {
-        checkIfImagesInOrder()
+        checkIfImagesInOrder2()
     }
 }
+

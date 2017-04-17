@@ -15,5 +15,6 @@ final class GameManager {
     static let sharedInstance: GameManager = GameManager()
     
     var counter = 0
+    var counter2 = 0
     
 }
