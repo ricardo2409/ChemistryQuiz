@@ -16,5 +16,6 @@ final class GameManager {
     
     var counter = 0
     var counter2 = 0
+    var counter3 = 0
     
 }

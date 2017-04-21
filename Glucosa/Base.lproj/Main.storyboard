@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Glucosa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Glucosa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -76,17 +76,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kdG-Iu-X1Q">
-                                    <size key="itemSize" width="89" height="79"/>
+                                    <size key="itemSize" width="98" height="89"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="inn-xE-aVZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="89" height="79"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="89" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="98" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rc-Y9-Ilc">
@@ -95,7 +95,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <size key="customSize" width="89" height="79"/>
+                                        <size key="customSize" width="98" height="89"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -297,6 +297,116 @@
             </objects>
             <point key="canvasLocation" x="2933.5999999999999" y="271.21439280359823"/>
         </scene>
+        <!--Juego3 View Controller-->
+        <scene sceneID="hZD-m3-FDW">
+            <objects>
+                <viewController storyboardIdentifier="Juego3ViewController" id="lJx-XO-xlD" customClass="Juego3ViewController" customModule="Glucosa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lea-ni-GqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ex-z8-AIX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NKF-9Z-fEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asigna los grupos funcionales faltantes de la  B 1-4 Glucanasa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-qx-Lby">
+                                <rect key="frame" x="16" y="69" width="343" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="B14Glucanasa" translatesAutoresizingMaskIntoConstraints="NO" id="DUA-D4-1Ea">
+                                <rect key="frame" x="40" y="181" width="296" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wd6-9J-3bK" customClass="DestinationView3" customModule="Glucosa" customModuleProvider="target">
+                                <rect key="frame" x="126" y="179" width="47" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60y-e8-6eN">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80385242540000001" green="1" blue="0.90202765949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYG-Vn-uuO" customClass="DestinationView3" customModule="Glucosa" customModuleProvider="target">
+                                <rect key="frame" x="40" y="293" width="23" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tuk-4k-bMp">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80385242540000001" green="1" blue="0.90202765949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSy-v3-1Bv" customClass="DestinationView3" customModule="Glucosa" customModuleProvider="target">
+                                <rect key="frame" x="214" y="293" width="79" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blj-Nc-NiH">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80385242540000001" green="1" blue="0.90202765949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-nQ-dVT" customClass="DIOCollectionView" customModule="DIOCollectionView">
+                                <rect key="frame" x="16" y="519" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="16f-Tu-NhN">
+                                    <size key="itemSize" width="76" height="72"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JmY-lD-Wom">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="76" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGZ-bg-D34">
+                                                    <rect key="frame" x="0.0" y="0.0" width="76" height="72"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-iZ-B1N" customClass="DestinationView3" customModule="Glucosa" customModuleProvider="target">
+                                <rect key="frame" x="183" y="252" width="30" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxe-NQ-r4A">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80385242540000001" green="1" blue="0.90202765949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView1" destination="ipH-nQ-dVT" id="k24-Ba-yip"/>
+                        <outlet property="imageView1" destination="60y-e8-6eN" id="fkC-Za-Z7v"/>
+                        <outlet property="imageView2" destination="tuk-4k-bMp" id="6EG-Po-WQv"/>
+                        <outlet property="imageView3" destination="blj-Nc-NiH" id="A5K-8n-zof"/>
+                        <outlet property="imageView4" destination="dxe-NQ-r4A" id="w18-Tz-vgr"/>
+                        <outlet property="imageViewGlucosa" destination="DUA-D4-1Ea" id="HWa-Ui-oWp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3b-FX-Cxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3748" y="273.91304347826087"/>
+        </scene>
         <!--Repaso-->
         <scene sceneID="IJ7-Dx-hfJ">
             <objects>
@@ -356,5 +466,6 @@
     </scenes>
     <resources>
         <image name="Arrow-100" width="100" height="100"/>
+        <image name="B14Glucanasa" width="329" height="311"/>
     </resources>
 </document>

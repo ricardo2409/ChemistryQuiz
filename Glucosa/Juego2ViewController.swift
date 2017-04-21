@@ -135,11 +135,22 @@ private extension Juego2ViewController {
         print(label2.tag)
         print(label3.tag)
         if(label1.tag == 10 && label2.tag == 20 || label2.tag == 20 && label3.tag == 30 || label1.tag == 10 && label3.tag == 30){
-            SCLAlertView().showSuccess("Correcto", subTitle: ":)")
+            let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton: false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("Siguiente Nivel") {
+                
+                //Instantiate next VC
+                if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego3ViewController") as? Juego3ViewController {
+                    if let navigator = self.navigationController {
+                        navigator.pushViewController(viewController, animated: true)
+                    }
+                }
+            }
+            
+            alertView.showSuccess("Correcto", subTitle: ":)")
             print("correcto")
-            
-            //Instantiate next VC
-            
         } else {
             SCLAlertView().showError("Incorrecto", subTitle: ":(")
             print("incorrecto")
@@ -153,10 +164,10 @@ private extension Juego2ViewController {
     }
     
     func addObservers2() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.gameHasEnded), name: Notification.Name("gameHasEndedNotification2"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.gameHasEnded2), name: Notification.Name("gameHasEndedNotification2"), object: nil)
     }
     
-    @objc func gameHasEnded() {
+    @objc func gameHasEnded2() {
         checkIfImagesInOrder2()
     }
 }
