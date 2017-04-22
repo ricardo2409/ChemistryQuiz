@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C19506C1EAC020800DD6B0A /* RepasoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19506B1EAC020800DD6B0A /* RepasoViewController.swift */; };
 		8CC6621D1EA27112006D3BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6621C1EA27112006D3BC7 /* AppDelegate.swift */; };
 		8CC6621F1EA27112006D3BC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6621E1EA27112006D3BC7 /* ViewController.swift */; };
 		8CC662221EA27112006D3BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC662201EA27112006D3BC7 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		79DFCF8C84333EFB7D5D2FEA /* Pods-Glucosa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glucosa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Glucosa/Pods-Glucosa.debug.xcconfig"; sourceTree = "<group>"; };
+		8C19506B1EAC020800DD6B0A /* RepasoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepasoViewController.swift; sourceTree = "<group>"; };
 		8CC662191EA27112006D3BC7 /* Glucosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glucosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC6621C1EA27112006D3BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC6621E1EA27112006D3BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				8CC6621E1EA27112006D3BC7 /* ViewController.swift */,
 				8CD7B86E1EAA7AB8007BBC71 /* DestinationView3.swift */,
 				8CC662201EA27112006D3BC7 /* Main.storyboard */,
+				8C19506B1EAC020800DD6B0A /* RepasoViewController.swift */,
 				8CD7B86C1EAA7762007BBC71 /* Juego3ViewController.swift */,
 				8CD7B8661EA4662D007BBC71 /* Juego2ViewController.swift */,
 				8CD7B8621EA3F0A8007BBC71 /* DestinationView.swift */,
@@ -241,6 +244,7 @@
 				8CD7B8691EA46701007BBC71 /* DestinationView2.swift in Sources */,
 				8CD7B86D1EAA7763007BBC71 /* Juego3ViewController.swift in Sources */,
 				8CC6621F1EA27112006D3BC7 /* ViewController.swift in Sources */,
+				8C19506C1EAC020800DD6B0A /* RepasoViewController.swift in Sources */,
 				8CD7B8631EA3F0A8007BBC71 /* DestinationView.swift in Sources */,
 				8CC6621D1EA27112006D3BC7 /* AppDelegate.swift in Sources */,
 				8CC6622F1EA3D705006D3BC7 /* JuegoViewController.swift in Sources */,
