@@ -144,7 +144,7 @@ private extension Juego3ViewController {
                 self.navigationController?.popToRootViewController(animated: true)
             }
             
-            alertView.showSuccess("Correcto", subTitle: ":)")
+            alertView.showSuccess("¡ Correcto !", subTitle: "")
             print("correcto")
             
            
@@ -153,7 +153,7 @@ private extension Juego3ViewController {
             
             
         } else {
-            SCLAlertView().showError("Incorrecto", subTitle: ":(")
+            SCLAlertView().showError("Incorrecto", subTitle: "Intenta de nuevo")
             print("incorrecto")
             reload()
             print(items1)

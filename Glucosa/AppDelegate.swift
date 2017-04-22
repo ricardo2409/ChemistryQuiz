@@ -13,9 +13,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    // Elige el storyboard a desplegar
+    func setStoryboard() {
+        let storyboard : UIStoryboard = self.grabStoryboard()
+        self.setInitialScreen(storyboard: storyboard)
+    }
+    
+    // Decide el storyboard a mostrar con base al tamaño de pantalla
+    func grabStoryboard() -> UIStoryboard {
+        let screenHeight : Int = Int(UIScreen.main.bounds.size.height)
+        print(screenHeight)
+        var storyboard : UIStoryboard
+        GameManager.sharedInstance.sizeDisplay = screenHeight
 
+        switch screenHeight {
+        
+        case 667:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break
+        case 736:
+            storyboard = UIStoryboard(name: "iPhone7Plus", bundle: nil)
+            break
+        default:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        }
+        
+        return storyboard
+    }
+    
+    // Decide la pantalla principal de la aplicación.
+    // Por ejemplo si el usuario ya habia hecho login empieza en cierta pantalla
+    // y si no presenta la de login.
+    func setInitialScreen(storyboard : UIStoryboard) {
+        var initViewController : UIViewController
+        
+        initViewController = storyboard.instantiateViewController(withIdentifier: "First")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initViewController
+        self.window?.makeKeyAndVisible()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setStoryboard()
+        
         return true
     }
 

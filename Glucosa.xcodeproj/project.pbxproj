@@ -19,6 +19,7 @@
 		8CD7B8691EA46701007BBC71 /* DestinationView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7B8681EA46701007BBC71 /* DestinationView2.swift */; };
 		8CD7B86D1EAA7763007BBC71 /* Juego3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7B86C1EAA7762007BBC71 /* Juego3ViewController.swift */; };
 		8CD7B86F1EAA7AB8007BBC71 /* DestinationView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7B86E1EAA7AB8007BBC71 /* DestinationView3.swift */; };
+		8CD7B8731EABBEB1007BBC71 /* iPhone7Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD7B8711EABBEB1007BBC71 /* iPhone7Plus.storyboard */; };
 		8DDABDF391237D481D8BC022 /* Pods_Glucosa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978492A01581D3532B8A6991 /* Pods_Glucosa.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		8CD7B8681EA46701007BBC71 /* DestinationView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView2.swift; sourceTree = "<group>"; };
 		8CD7B86C1EAA7762007BBC71 /* Juego3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juego3ViewController.swift; sourceTree = "<group>"; };
 		8CD7B86E1EAA7AB8007BBC71 /* DestinationView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView3.swift; sourceTree = "<group>"; };
+		8CD7B8721EABBEB1007BBC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhone7Plus.storyboard; sourceTree = "<group>"; };
 		978492A01581D3532B8A6991 /* Pods_Glucosa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glucosa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72E5994C8D779AB67E38624 /* Pods-Glucosa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glucosa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glucosa/Pods-Glucosa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,10 +94,11 @@
 		8CC6621B1EA27112006D3BC7 /* Glucosa */ = {
 			isa = PBXGroup;
 			children = (
+				8CD7B8711EABBEB1007BBC71 /* iPhone7Plus.storyboard */,
 				8CC6621C1EA27112006D3BC7 /* AppDelegate.swift */,
 				8CC6621E1EA27112006D3BC7 /* ViewController.swift */,
-				8CC662201EA27112006D3BC7 /* Main.storyboard */,
 				8CD7B86E1EAA7AB8007BBC71 /* DestinationView3.swift */,
+				8CC662201EA27112006D3BC7 /* Main.storyboard */,
 				8CD7B86C1EAA7762007BBC71 /* Juego3ViewController.swift */,
 				8CD7B8661EA4662D007BBC71 /* Juego2ViewController.swift */,
 				8CD7B8621EA3F0A8007BBC71 /* DestinationView.swift */,
@@ -175,6 +178,7 @@
 				8CC662271EA27112006D3BC7 /* LaunchScreen.storyboard in Resources */,
 				8CC662241EA27112006D3BC7 /* Assets.xcassets in Resources */,
 				8CC662221EA27112006D3BC7 /* Main.storyboard in Resources */,
+				8CD7B8731EABBEB1007BBC71 /* iPhone7Plus.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +266,14 @@
 				8CC662261EA27112006D3BC7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CD7B8711EABBEB1007BBC71 /* iPhone7Plus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CD7B8721EABBEB1007BBC71 /* Base */,
+			);
+			name = iPhone7Plus.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

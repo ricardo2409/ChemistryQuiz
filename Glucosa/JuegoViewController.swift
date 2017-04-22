@@ -132,21 +132,47 @@ private extension JuegoViewController {
             let alertView = SCLAlertView(appearance: appearance)
             alertView.addButton("Siguiente Nivel") {
                 
-                //Instantiate next VC
-                if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
-                    if let navigator = self.navigationController {
-                        navigator.pushViewController(viewController, animated: true)
+                //Checar el size del display
+                 let screenHeight = GameManager.sharedInstance.sizeDisplay
+                
+                switch screenHeight {
+                    
+                case 667:
+                    //Instantiate next VC
+                    if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
+                        if let navigator = self.navigationController {
+                            navigator.pushViewController(viewController, animated: true)
+                        }
                     }
+                    break
+                case 736:
+                    //Instantiate next VC
+                    if let viewController = UIStoryboard(name: "iPhone7Plus", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
+                        if let navigator = self.navigationController {
+                            navigator.pushViewController(viewController, animated: true)
+                        }
+                    }
+                    break
+                default:
+                    //Instantiate next VC
+                    if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Juego2ViewController") as? Juego2ViewController {
+                        if let navigator = self.navigationController {
+                            navigator.pushViewController(viewController, animated: true)
+                        }
+                    }
+                    
                 }
+
+                
             }
             
-            alertView.showSuccess("Correcto", subTitle: ":)")
+            alertView.showSuccess("¡ Correcto !", subTitle: "")
             print("correcto")
             
            
             
         } else {
-            SCLAlertView().showError("Incorrecto", subTitle: ":(")
+            SCLAlertView().showError("Incorrecto", subTitle: "Intenta de nuevo")
             print("incorrecto")
             reload()
             print(items1)
