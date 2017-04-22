@@ -37,7 +37,10 @@ class JuegoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        addObservers()
+        print("ViewDidLoad")
+        self.navigationController?.isNavigationBarHidden = false
+
+        //addObservers()
         collectionView1.delegate = self
         collectionView1.dataSource = self
         collectionView1.dioDataSource = self
@@ -46,7 +49,22 @@ class JuegoViewController: UIViewController {
         itemsAux = items1
         
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ViewWillAppear")
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        //Reload data
+        addObservers()
+        reload()
+        print(items1)
+        items1 = itemsAux
+        print(itemsAux)
+        self.collectionView1.reloadData()
+    }
     override func viewDidDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }

@@ -14,19 +14,21 @@ class Juego3ViewController: UIViewController {
 
     @IBOutlet weak var imageViewGlucosa: UIImageView!
     
-    @IBOutlet weak var imageView1: UIImageView!
-    @IBOutlet weak var imageView2: UIImageView!
-    @IBOutlet weak var imageView3: UIImageView!
-    @IBOutlet weak var imageView4: UIImageView!
-    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+  
     @IBOutlet weak var collectionView1: DIOCollectionView!
-    var items1 = [(10, UIImage(named:"oh")!),
-                  (20, UIImage(named:"a")!),
-                  (40, UIImage(named:"o")!),
-                  (30, UIImage(named:"cho")!)]
+   
     
-    var itemsAux = [(Int, UIImage)]()
-    func itemsForCollectionView(collectionView: UICollectionView) -> [(Int, UIImage)] {
+    var items1 = [(10, "OH"),
+                  (20, "A"),
+                  (30, "O"),
+                  (30, "CH-O")]
+    
+    var itemsAux = [(Int, String)]()
+    func itemsForCollectionView(collectionView: UICollectionView) -> [(Int, String)] {
         if(collectionView == collectionView1) {
             //items1 = itemsAux
             return items1
@@ -36,15 +38,26 @@ class Juego3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
         addObservers3()
         imageViewGlucosa.image = UIImage(named: "B14Glucanasa")
-        
+        self.title = "Juego 3"
         collectionView1.delegate = self
         collectionView1.dataSource = self
         collectionView1.dioDataSource = self
         collectionView1.dioDelegate = self
         
         itemsAux = items1
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+        print("ViewWillAppear")
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -57,10 +70,10 @@ class Juego3ViewController: UIViewController {
     }
     
     func reload(){
-        imageView1.image = UIImage()
-        imageView2.image = UIImage()
-        imageView3.image = UIImage()
-        imageView4.image = UIImage()
+        label1.text = ""
+        label2.text = ""
+        label3.text = ""
+        label4.text = ""
     }
 }
 extension Juego3ViewController: DIOCollectionViewDelegate {
@@ -99,15 +112,15 @@ extension Juego3ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
-        let imageView  = cell.subviews[0].subviews[0] as! UIImageView
-        //let label = cell.subviews[0].subviews[1] as! UILabel
+        //let imageView  = cell.subviews[0].subviews[0] as! UIImageView
+        let label  = cell.subviews[0].subviews[0] as! UILabel
         
         let item = itemsForCollectionView(collectionView: collectionView)[indexPath.row]
         print(item)
         
         
         //label.text = "\(item.0)"
-        imageView.image = item.1
+        label.text = item.1
         
         return cell
     }
@@ -123,15 +136,8 @@ private extension Juego3ViewController {
     func checkIfImagesInOrder3() {
         
         //FALTA CHECAR EL ORDEN
-        print("imageView1 tag")
-        print(imageView1.tag)
-        print("imageView2 tag")
-        print(imageView2.tag)
-        print("imageView3 tag")
-        print(imageView3.tag)
-        print("imageView4 tag")
-        print(imageView4.tag)
-        if((imageView1.tag == 10 && imageView2.tag == 20 && imageView3.tag == 30) || (imageView2.tag == 20 && imageView3.tag == 30 && imageView4.tag == 40) || (imageView1.tag == 10 && imageView2.tag == 20 && imageView4.tag == 40)){
+       
+        if((label1.tag == 10 && label2.tag == 20 && label3.tag == 30) || (label2.tag == 20 && label3.tag == 30 && label4.tag == 40) || (label1.tag == 10 && label2.tag == 20 && label4.tag == 40)){
             
             
             

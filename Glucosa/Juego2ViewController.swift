@@ -38,7 +38,10 @@ class Juego2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
         addObservers2()
+        //self.navigationController?.navigationBar.topItem?.title = "Juego 2"
+        self.title = "Juego 2"
         imageView1.image = UIImage(named: "glucosa")
         imageView3.image = UIImage(named: "celulosa")
         imageView2.image = UIImage(named: "celobiosa")
@@ -48,6 +51,22 @@ class Juego2ViewController: UIViewController {
         collectionView2.dioDataSource = self
         collectionView2.dioDelegate = self
         itemsAux = items1
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ViewWillAppear")
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        //Reload data
+        //addObservers2()
+        reload()
+        print(items1)
+        items1 = itemsAux
+        print(itemsAux)
+        self.collectionView2.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

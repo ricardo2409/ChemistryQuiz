@@ -37,15 +37,15 @@ class DestinationView3: UIView, DIOCollectionViewDestination {
         
         print(dragState)
         
-        let imageView = self.subviews[0] as! UIImageView
-        let item = (dragInfo?.userData as? (Int, UIImage))!
+        let label = self.subviews[0] as! UILabel
+        let item = (dragInfo?.userData as? (Int, String))!
         
         switch(dragState) {
         case .began:
             break
         case .ended:
-            imageView.tag = item.0
-            imageView.image = item.1
+            label.tag = item.0
+            label.text = item.1
             GameManager.sharedInstance.counter3 += 1
             print(GameManager.sharedInstance.counter3)
             if GameManager.sharedInstance.counter3 == 4 {
